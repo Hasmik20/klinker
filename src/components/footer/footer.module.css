@@ -1,0 +1,109 @@
+.footer {
+  height: 250px;
+  background-color: #fbf6f4;
+  position: relative;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr;
+  max-width: 1620px;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  padding-top: 3rem;
+}
+.mainContainer a {
+  color: brown;
+  text-decoration: none;
+}
+
+.leftSection p {
+  /* border: 1px solid red; */
+  color: brown;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  justfy-container: center;
+  gap: 0.9rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+.icon {
+  font-size: 10px;
+  color: brown;
+}
+.firsIcon {
+  margin-top: 0.9rem;
+}
+.rightSection {
+  /* background-color: green; */
+}
+.rightSection p {
+  color: gray;
+  font-size: 0.75rem;
+}
+.rightSection h6 {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.detailsContainer {
+  display: flex;
+  justfy-content: center;
+  align-items: center;
+  gap: 18px;
+  /* margin-top: -1.56rem; */
+}
+
+.copyRight {
+  display: flex;
+  justfy-contacts: center;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 8rem;
+
+  z-index: 2;
+}
+.copyRight p {
+  font-size: 0.65rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1240px) {
+  .footer {
+    height: 360px;
+  }
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding-top: 15px;
+  }
+  .rightSection {
+    margin-top: 0.6rem;
+    position: relative;
+  }
+  .rightSection p {
+    font-size: 0.6rem;
+  }
+  .detailsContainer {
+    flex-direction: column;
+
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    position: absolute;
+    left: -5px;
+    top: 1.25rem;
+  }
+  .copyRight {
+    bottom: 5px;
+    left: 6px;
+    padding: 0;
+  }
+}

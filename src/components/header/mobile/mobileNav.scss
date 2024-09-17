@@ -1,0 +1,120 @@
+.navMobile {
+  display: none;
+}
+@media (max-width: 1240px) {
+  .navMobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .rightSide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  .headerMenuMobile {
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    max-width: 1240px;
+    width: 100%;
+    position: fixed;
+    z-index: 20000;
+    right: 0;
+    top: 0;
+    padding: 20px 30px 20px 10px;
+
+    text-align: center;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+
+    .layerNavHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .searchMobile1 {
+      width: 90%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      position: relative;
+      .searchInput1 {
+        outline: none;
+        width: 100%;
+        padding: 10px;
+        padding-left: 40px;
+        border-left: 2px solid var(--gray);
+        border-right: 2px solid var(--gray);
+        border-top: none;
+        border-bottom: none;
+        margin-left: 20px;
+      }
+      .searchIcon1 {
+        position: absolute;
+        top: 5px;
+        left: 30px;
+      }
+    }
+    ul {
+      width: 100%;
+
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      li {
+        width: 100%;
+        padding: 20px 0 20px 0;
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        border-bottom: 2px solid var(--gray);
+        a {
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+          display: block;
+        }
+      }
+    }
+  }
+}
+.animationDrop {
+  @media (max-width: 1240px) {
+    animation: drop 2s ease-in-out;
+
+    @keyframes drop {
+      0% {
+        opacity: 0;
+        transform: translateY(-80px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+.animationUp {
+  @media (max-width: 1240px) {
+    animation: up 2s ease-in-out;
+    @keyframes up {
+      0% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-80px);
+        visibility: collapse;
+      }
+    }
+  }
+}
