@@ -1,16 +1,19 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 
 import Header from "../components/header/Header";
-import LineDivider from "./Linedivider";
+
 import Footer from "../components/footer/Footer";
+import Loader from "./Loader";
 
 const AppLayout = () => {
+  const navigation = useNavigation();
+  const isLoading = navigation.state === "loading";
   return (
     <div className="container">
-      <header className="wrapper">
+      {isLoading && <Loader />}
+      <header>
         <Header />
       </header>
-      <LineDivider />
 
       <main>
         <Outlet />

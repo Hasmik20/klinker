@@ -3,21 +3,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 453px;
+  height: 48px;
 }
 .searchInput {
   outline: none;
   width: 100%;
   padding: 1rem;
   padding-left: 2.5rem;
-  border-left: 2px solid var(--gray);
-  border-right: 2px solid var(--gray);
+  border-left: 1px solid #c3c1bf;
+  border-right: 1px solid #c3c1bf;
   border-top: none;
   border-bottom: none;
-  margin-left: 1.25rem;
+  margin-left: 12px;
 }
 .searchIcon {
+  font-size: 10px;
+
   position: absolute;
-  top: 0.5rem;
-  left: 1.8rem;
-  color: var(--gray);
+  top: 10px;
+  left: 22px;
+  color: #c3c1bf;
 }

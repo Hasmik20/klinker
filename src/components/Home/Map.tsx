@@ -8,15 +8,15 @@ const Map = () => {
         <h2>наши контакты</h2>
         {/* <TelNumber /> */}
         <div className={styles.telContainer}>
-          <p className={styles.firstNum}>
+          <p className={styles.icon1}>
             <a href="tel:4957228800"> +7 (495) 722-88-00</a>
           </p>
-          <p>
+          <p className={styles.icon1}>
             <a href="tel:4951165838">+7 (495) 116-58-38</a>
           </p>
         </div>
         <div className={styles.telContainer}>
-          <p>
+          <p className={styles.icon1}>
             <a href="mailto: magmatika08@gmail.com">magmatika08@gmail.com</a>
           </p>
         </div>

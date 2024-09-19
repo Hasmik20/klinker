@@ -1,5 +1,5 @@
 import { Envelope, Phone, Location } from "../../ui/icons";
-import TelNumber from "../../ui/TelNumber";
+// import TelNumber from "../../ui/TelNumber";
 import styles from "./footer.module.css";
 
 const Footer = () => {
@@ -11,15 +11,15 @@ const Footer = () => {
             <div className={styles.icon}>
               <Phone />
             </div>
-            <TelNumber />
-            {/* <div>
+            {/* <TelNumber /> */}
+            <div>
               <p className={styles.firstIcon}>
                 <a href="tel:4957228800"> +7 (495) 722-88-00</a>
               </p>
               <p>
                 <a href="tel:4951165838">+7 (495) 116-58-38</a>
               </p>
-            </div> */}
+            </div>
           </div>
           <div className={styles.contacts}>
             <div className={styles.icon}>

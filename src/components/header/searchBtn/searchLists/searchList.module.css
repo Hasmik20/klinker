@@ -1,9 +1,52 @@
 .container {
-  width: 100px;
-  hight: 100px;
-  background-color: red;
+  width: 450px;
+  hight: 257px;
+  overflow-y: scroll;
+  background-color: white;
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 4;
+  top: 116px;
+  left: 656px;
+  z-index: 99;
+  cursor: pointer;
+}
+.itemContainer {
+  border: 1px solid #c3c1bf;
+  padding: 8px;
+  display: flex;
+  gap: 10px;
+}
+
+.imageContainer {
+  max-width: 48px;
+  hight: 48px;
+}
+.imageContainer img {
+  display: block;
+  max-width: 48px;
+  height: 100%;
+  width: 100%;
+}
+.detailsContainer {
+  color: #44392e;
+}
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.details {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.price {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0.05em;
+  text-align: left;
 }

@@ -45,6 +45,7 @@ const SlideShow = () => {
           </li>
         ))}
       </ul>
+      <div className={styles.overlay}></div>
     </section>
   );
 };

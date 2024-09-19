@@ -1,13 +1,11 @@
-import ImagesFrame from "../../components/Home/ImagesFrame";
 import SlideShow from "../../components/Home/SlideShow";
-import Map from "../../components/Home/map";
+import Map from "../../components/Home/Map";
 const Home = () => {
   return (
     <div>
       <SlideShow />
 
-      <div className="wrapper">
-        <ImagesFrame />
+      <div>
         <Map />
       </div>
     </div>

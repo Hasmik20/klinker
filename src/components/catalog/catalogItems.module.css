@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+.filter {
+  flex: 228px;
+}
+.filter h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-top: -60px;
+  margin-bottom: 20px;
+}
+.categoryT {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.categoryP {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.productP {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  cursor: pointer;
+}
+.checkBox {
+  margin-top: 2px;
+}
+.checkBox input {
+  margin-right: 2px;
+}
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* items */
+
+.itemsContainer {
+  max-width: 263px;
+  color: #44392e;
+  cursor: pointer;
+}
+.img {
+  display: block;
+  max-width: 263px;
+  width: 100%;
+}
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.price {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 1240px) {
+  .container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,120 @@
+.container {
+  margin-left: 9.3rem;
+  margin-right: 8rem;
+  margin-top: 62px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.upperBox {
+  max-width: 1064px;
+  display: flex;
+  gap: 12px;
+}
+
+.imagesContainer {
+  flex: 96px;
+}
+.img {
+  max-width: 96px;
+  padding: 10px;
+  cursor: pointer;
+}
+.img img {
+  width: 100%;
+  display: block;
+}
+.imgContainer {
+  flex: 512px;
+}
+.imgContainer img {
+  display: block;
+  width: 100%;
+}
+.detailsContainer {
+  flex: 379px;
+}
+.sector {
+  font-family: Gotham;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #776f67;
+}
+.title {
+  font-family: Gotham;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #44392e;
+}
+.series {
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #776f67;
+}
+.price {
+  font-family: Gotham;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.btn1 {
+  width: 229px;
+  background-color: #9b0900;
+  color: white;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.car {
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.allP {
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.space {
+  margin: 10px 0 0 0;
+}
+
+.downBox {
+  margin-top: 15px;
+}
+
+.downBox h2 {
+  font-family: Gotham;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 1240px) {
+  .upperBox {
+    flex-direction: column;
+  }
+}

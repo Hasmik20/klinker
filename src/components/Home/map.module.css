@@ -1,38 +1,45 @@
 .mainContainer {
+  max-width: 120rem;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   margin-left: 150px;
-  margin-right: 150px;
+  /* margin-right: 150px;  */
   margin-top: 22px;
 }
 .addressContainer {
 }
 .addressContainer h2 {
   text-transform: uppercase;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
+  font-family: Gotham;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: left;
+  color: #44392e;
 }
 .telContainer {
   margin: 5px 0 0 0;
 }
-.telContainer p a {
-  color: gray;
-  text-decoration: none;
-  font-size: 14px;
-}
-.firstNum {
-  margin-bottom: 5px;
-}
-.address p {
-  color: gray;
+.telContainer p a,
+p {
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21.6px;
+  text-align: left;
+  color: #44392e;
 
-  font-size: 14px;
+  text-decoration: none;
 }
+.icon1 {
+  margin-bottom: 10px;
+}
+
 .mapContainer {
   background-color: green;
+  margin-right: 150px;
 }
 
 /* Responsive Styles */
