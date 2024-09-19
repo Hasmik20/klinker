@@ -43,24 +43,24 @@ const SearchBtn = ({
   // const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
   //   setQuery(e.target.value);
   // };
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setQuery("");
-  };
+  // const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setQuery("");
+  // };
   return (
     <div className={`${styles.search} ${className}`}>
       <div className={styles.searchIcon}>
         <SearchIcon className={iconClassName} />
       </div>
-      <form onSubmit={onSubmit}>
-        <input
-          onChange={(e) => setQuery(e.target.value)}
-          value={query}
-          type="text"
-          placeholder="Найти ..."
-          className={`${styles.searchInput} ${inputClassName}`}
-        />
-      </form>
+      {/* <form onSubmit={onSubmit}> */}
+      <input
+        onChange={(e) => setQuery(e.target.value)}
+        value={query}
+        type="text"
+        placeholder="Найти ..."
+        className={`${styles.searchInput} ${inputClassName}`}
+      />
+      {/* </form> */}
     </div>
   );
 };
